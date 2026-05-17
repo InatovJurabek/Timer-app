@@ -1,0 +1,103 @@
+#timeDisplay {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0;
+}
+
+.timer-wrapper {
+    width: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#timerDisplay {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.main-time {
+    font-size: 120px;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: 1;
+}
+
+.seconds {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.seconds::before {
+    content: ":";
+    margin-right: 2px;
+}
+
+.timer-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.timer-controls input {
+    width: 90px;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.timer-controls input:focus {
+    background: rgba(255, 255, 255, 0.14);
+    transform: scale(1.03);
+}
+
+.timer-controls input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.timer-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.timer-buttons button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    transition: 0.25s ease;
+}
+
+.timer-buttons button:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-2px);
+}
+
+.timer-buttons button:active {
+    transform: scale(0.96);
+}

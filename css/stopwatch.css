@@ -1,0 +1,156 @@
+#timeDisplay {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0;
+}
+.milli-seconds::before {
+  content: ".";
+}
+.milli-seconds {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+
+
+.stopwatch-wrapper {
+    width: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#stopwatchDisplay {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.main-time {
+    font-size: 120px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: 1;
+}
+
+.milliseconds {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.milliseconds::before {
+    content: ":";
+    margin-right: 2px;
+}
+
+.stopwatch-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.stopwatch-buttons button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.25s ease;
+}
+
+.stopwatch-buttons button:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-2px);
+}
+
+.stopwatch-buttons button:active {
+    transform: scale(0.96);
+}
+
+.laps-container {
+    width: 100%;
+    max-width: 420px;
+
+    margin-top: 25px;
+
+    max-height: 220px;
+    overflow-y: auto;
+
+    padding: 5px;
+}
+
+/* scroll chiroyli */
+.laps-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.laps-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+#lapsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#lapsList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 12px;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: white;
+
+    font-size: 13px;
+
+    backdrop-filter: blur(8px);
+
+    transition: 0.2s ease;
+}
+
+#lapsList li:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-1px);
+}
+
+#lapsList li span:first-child {
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+#lapsList li span:last-child {
+    font-family: monospace;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

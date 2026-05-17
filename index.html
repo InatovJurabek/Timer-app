@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/stopwatch.css">
+    <link rel="stylesheet" href="./css/timer.css">
+    <script type="module" src="./js/main.js" defer></script>
+    <script type="module" src="./js/clock.js" defer></script>
+    <script type="module" src="./js/timer.js" defer></script>
+    <script type="module" src="./js/stopwatch.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn active-btn" id="btn"><i class="icons" data-lucide="clock"></i>
+            <span class="btn-text">CLOCK</span>
+            </button>
+            <button class="btn active-btn" id="btn2"><i class="icons" data-lucide="timer"></i>
+            <span class="btn-text">TIMER</span>
+            </button>
+            <button class="btn active-btn" id="btn3"><i class="icons" data-lucide="timer-reset"></i>
+            <span class="btn-text">STOPWATCH</span>
+        </div>
+        <div class="screen-btn">
+            <button class="btn" id="fullscreenBtn"><i data-lucide="maximize-2"></i>
+            <span class="btn-text">Fullscreen</span>
+            </button>
+        </div>
+        <div class="card">
+            <div class="card-header">Time</div>
+            <div class="display-panel">
+               <div class="time" id="timeDisplay"></div>
+               <div class="real-data" id="dateDisplay"></div>
+        </div>
+    </div>   
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>

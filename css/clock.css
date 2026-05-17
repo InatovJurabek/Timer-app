@@ -1,0 +1,12 @@
+.time {
+  font-size: 8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.real-data {
+  font-size: 1.3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
